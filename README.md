@@ -15,8 +15,6 @@
 - model_1_with_team_dataset.ipynb: Jupyter notebook huấn luyện và đánh giá model 1 trên bộ dữ liệu do nhóm tự thu thập
 - model_2_with_ljspeech.ipynb: Jupyter notebook huấn luyện và đánh giá model 1 trên bộ dữ liệu LJ Speech
 - model_2_with_team_dataset.ipynb: Jupyter notebook huấn luyện và đánh giá model 2 trên bộ dữ liệu do nhóm tự thu thập
-- model_1_with_ljspeech_epoch025.keras: File lưu lại model 1 train trên bộ dữ liệu LJ Speech sau 25 epoch.
-- model_1_with_team_dataset_epoch050.keras: File lưu tại model 1 train trên bộ dữ liệu LJ Speech sau 50 epoch.
 
 Để có thể sử dụng hai file model (.keras), hãy chạy đoạn code sau:
 

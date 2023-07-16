@@ -16,28 +16,6 @@
 - model_2_with_ljspeech.ipynb: Jupyter notebook huấn luyện và đánh giá model 1 trên bộ dữ liệu LJ Speech
 - model_2_with_team_dataset.ipynb: Jupyter notebook huấn luyện và đánh giá model 2 trên bộ dữ liệu do nhóm tự thu thập
 
-Để có thể sử dụng hai file model (.keras), hãy chạy đoạn code sau:
-
-```
-import tensorflow as tf
-from tensorflow import keras
-
-def ctc_loss(target, prediction):
-    batch_size = tf.cast(tf.shape(target)[0], dtype='int64')
-    input_size = tf.cast(tf.shape(prediction)[1], dtype='int64')
-    label_size = tf.cast(tf.shape(target)[1], dtype='int64')
-    temp = tf.ones(shape=(batch_size, 1), dtype='int64')
-    input_size = input_size * temp
-    label_size = label_size * temp
-    loss = keras.backend.ctc_batch_cost(target, prediction, input_size, label_size)
-    return loss
-
-# To load saved model
-model = keras.models.load_model('/content/drive/My Drive/model-doan-datatuthuthap-epoch50.keras', custom_objects = {"ctc_loss": ctc_loss}) 
-
-# Uses model.predict(...) to predict
-```
-
 ## Danh sách đường dẫn
 - datato2.zip: https://drive.google.com/file/d/1-1JqAcxUPUNyTF4tKmvQZ-RVR3GGrJlV Các file audio trong bộ dữ liệu nhóm tự thu thập
 - metadata02.csv: https://drive.google.com/file/d/1YV86EDntW_CUrkZzcuiXntf60BkymWsD Metadata của bộ dữ liệu nhóm tự thu thập

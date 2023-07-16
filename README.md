@@ -17,5 +17,9 @@
 - model_2_with_team_dataset.ipynb: Jupyter notebook huấn luyện và đánh giá model 2 trên bộ dữ liệu do nhóm tự thu thập
 
 ## Danh sách đường dẫn
+Dataset và model có kích thước rất lớn (300 MB đến hơn 1 GB) nên không thể đăng trực tiếp lên GitHub, tuy nhiên có thể truy cập bằng đường dẫn Google Drive
+
 - datato2.zip: https://drive.google.com/file/d/1-1JqAcxUPUNyTF4tKmvQZ-RVR3GGrJlV Các file audio trong bộ dữ liệu nhóm tự thu thập
 - metadata02.csv: https://drive.google.com/file/d/1YV86EDntW_CUrkZzcuiXntf60BkymWsD Metadata của bộ dữ liệu nhóm tự thu thập
+- model_1_with_team_dataset_epoch050.keras: https://drive.google.com/file/d/18XtMxd19VqyibuPI472NLHvh7QO7JVri/view?usp=drive_link Model 1 train với dữ liệu tự thu thập sau epoch 50
+- model_1_with_ljspeech_epoch025.keras: https://drive.google.com/file/d/19WnuPn1KR7-AMMJcinJveSgwyJF4VNy6/view?usp=drive_link Model 1 train với LJ Speech
